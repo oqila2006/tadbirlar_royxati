@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Manager Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- LOGIN -->
+  <div id="loginBox" class="card center">
+    <h2>🔐 Tizimga kirish</h2>
+    <input id="loginUser" placeholder="Login">
+    <input id="loginPass" type="password" placeholder="Parol">
+    <button onclick="login()">Kirish</button>
+    <p class="hint">Demo: admin / 1234</p>
+  </div>
+
+  <!-- MAIN -->
+  <div id="mainApp" class="hidden">
+    <header>🌍 Event Manager</header>
+
+    <section class="event card">
+      <h2>🎪 Katta Tadbir</h2>
+      <div class="grid">
+        <div><b>Sana:</b> <span id="date">2025-12-20</span></div>
+        <div><b>Vaqt:</b> <span id="time">18:00</span></div>
+        <div><b>Joy:</b> <span id="place">Tashkent City Hall</span></div>
+        <div><b>Bo‘sh o‘rin:</b> <span id="seats">100</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>🧾 Ro‘yxatdan o‘tish</h3>
+      <input id="name" placeholder="Ismingiz">
+      <button onclick="register()">Ro‘yxatdan o‘tish</button>
+      <p>Qatnashuvchilar soni: <b><span id="count">0</span></b></p>
+      <ul id="list"></ul>
+    </section>
+
+    <section class="card stats">
+      <h3>📊 Sotuvchi statistikasi</h3>
+      <p>Mavjud biletlar: <b><span id="tickets">100</span></b></p>
+      <p>Sotilgan biletlar: <b><span id="sold">0</span></b></p>
+      <p>Umumiy summa: <b><span id="sum">0</span> so‘m</b></p>
+    </section>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
